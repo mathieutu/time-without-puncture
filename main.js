@@ -1,8 +1,8 @@
 import 'tailwindcss/tailwind.css'
 
-const PUNCTURE_DATE = new Date('2021-09-22T18:00:00')
+const PUNCTURE_DATE = new Date('2023-05-21T22:00:00')
 const PUNCTURE_START = new Date('2021-09-22T18:00:00')
-const PUNCTURE_TIMES = 0
+const PUNCTURE_TIMES = 3
 
 const join = (arr) => {
   const filteredArray = arr.filter(Boolean)
