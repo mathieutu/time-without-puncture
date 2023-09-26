@@ -1,8 +1,8 @@
 import 'tailwindcss/tailwind.css'
 
-const PUNCTURE_DATE = new Date('2023-05-21T22:00:00')
-const PUNCTURE_START = new Date('2021-09-22T18:00:00')
-const PUNCTURE_TIMES = 3
+const LAST_PUNCTURE_DATE = new Date('2023-09-01T18:00:00')
+const PUNCTURE_START = new Date('2023-09-01T18:00:00')
+const PUNCTURE_TIMES = 0
 
 const join = (arr) => {
   const filteredArray = arr.filter(Boolean)
@@ -51,6 +51,6 @@ const punctureMessage = PUNCTURE_TIMES
 document.querySelector('#puncture-times').innerHTML = punctureMessage
 
 setInterval(() => {
-  document.querySelector('#puncture-delay').innerHTML = getDistanceMessage(PUNCTURE_DATE)
+  document.querySelector('#puncture-delay').innerHTML = getDistanceMessage(LAST_PUNCTURE_DATE)
   document.body.style = ''
 }, 1000)
